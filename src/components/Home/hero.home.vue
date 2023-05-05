@@ -26,7 +26,7 @@ export default {
   components: {},
 };
 </script>
-<style>
+<style scoped>
 .container-banner {
   position: relative;
 }
@@ -45,9 +45,9 @@ export default {
 }
 
 .hero {
-  height: 120vh;
+  height: 80vh;
   background: url("../../assets/images/banner-landscape.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -64,14 +64,15 @@ export default {
   .hero {
     height: 100vh;
     background: url("../../assets/images/banner-potrait.png");
+    background-size: 100% 100%;
     padding: 5%;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 451px) and (max-width: 600px) {
   .hero {
     height: 100vh;
-    background: url("../../assets/images/banner-landscape.png");
+    background: url("../../assets/images/banner-potrait.png");
     background-size: cover;
     padding: 5%;
   }

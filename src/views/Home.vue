@@ -4,34 +4,33 @@
     <div style="background-color: #faf9f9">
       <contactHomeVue />
       <region />
-      <specialsHomeVue />
-      <recommendHomeVue />
-      <testimonialHomeVue />
-      <discountHomeVue />
+      <v-container>
+        <Timeline />
+        <Terms />
+      </v-container>
+      <PrizeSection />
     </div>
   </div>
 </template>
 
 <script>
 import contactHomeVue from "../components/Home/contact.home.vue";
-import discountHomeVue from "../components/Home/discount.home.vue";
 import region from "../components/Home/region.home.vue";
 import heroHomeVue from "../components/Home/hero.home.vue";
-import recommendHomeVue from "../components/Home/recommend.home.vue";
-import specialsHomeVue from "../components/Home/specials.home.vue";
-import testimonialHomeVue from "../components/Home/testimonial.home.vue";
+import Timeline from "../components/Home/Timeline.home.vue";
+import Terms from "../components/Home/Terms.home.vue";
+import PrizeSection from "../components/Home/PrizeSection.home.vue";
 
 export default {
   name: "Home",
 
   components: {
     heroHomeVue,
-    specialsHomeVue,
+    PrizeSection,
     contactHomeVue,
+    Timeline,
+    Terms,
     region,
-    recommendHomeVue,
-    testimonialHomeVue,
-    discountHomeVue,
   },
 };
 </script>
